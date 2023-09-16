@@ -1,0 +1,2 @@
+model_checkpoint_path: "aug_model"
+all_model_checkpoint_paths: "aug_model"
