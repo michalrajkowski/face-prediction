@@ -1,0 +1,5 @@
+cartoon2.png Male 100.0
+kratos.jpg Male 100.0
+female1.png Female 100.0
+female2.png Female 100.0
+male1.jpg Male 100.0
