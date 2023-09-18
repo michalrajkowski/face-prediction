@@ -2,10 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import cv2
-import dlib
+# import dlib
 import time
-import random
-import pickle
 import time
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
@@ -106,7 +104,6 @@ special_Y = np.array(special_Y)
 special_X = special_X/255.0
 
 special_pred = model.predict(special_X, batch_size=32)
-print(special_pred)
 
 # Prepare results
 gender_chance = []
@@ -117,7 +114,7 @@ for i in range(len(special_pred)):
   chance = special_pred[i][0]
   predicted_gender = 0 if chance < 0.5 else 1
   perc = 1.0 - chance if chance < 0.5 else chance
-  perc = perc*100.0
+  perc = round(perc*100.0, 2)
   gender_chance.append(perc)
   predicted_cathegories.append(CATEGORIES[predicted_gender])
 
@@ -127,7 +124,6 @@ for i in range(len(special_pred)):
   colored_image = original_images[i]
   certainity_percent = gender_chance[i]
   image_name = image_names[i]
-  print(certainity_percent, predicted_cat, image_name)
   create_prediction_plot(colored_image, certainity_percent, predicted_cat, image_name)
   save_path = os.path.join(OUTPUT_IMG_DIR, image_name)
   plt.savefig(save_path)
