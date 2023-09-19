@@ -1,6 +1,6 @@
 # Gender Prediction with TensorFlow
 
-This repository contains a gender prediction model built using TensorFlow. The model predicts the gender (female or male) based on input face images. The model has an accuracy rate of approximately 91%. 
+This repository contains a [custom-trained](#model-training-process) gender prediction model built using TensorFlow. The model predicts the gender (female or male) based on input face images. The custom-trained model has an accuracy rate of approximately 91%. 
 
 ## Getting Started
 
@@ -55,6 +55,17 @@ In this format:
 - `[Image Name]`: Represents the name of the image for which the gender was predicted.
 - `[Predicted Gender]`: Represents the predicted gender (e.g., "Male" or "Female").
 - `[Certainty Percentage]`: Represents the certainty level of the prediction as a percentage (e.g., 100.0% indicates high confidence).
+
+## Model training process
+
+### Dataset
+
+The model was trained using the [All Faces Dataset](https://www.dropbox.com/s/a0lj1ddd54ns8qy/All-Age-Faces%20Dataset.zip?dl=0). This dataset comprises 13,322 face images, primarily featuring individuals of Chinese ethnicity. It provides nearly equal representation of both genders and covers a wide age range from 2 to 80 years. 
+
+Original colorful images were downscaled from 720p to 50x50 pixels gray scaled. The training dataset has been augmented using horizontal flip and blur effect, quadrupling dataset size. 
+
+Model structure is included inside [main.py](./main.py). Model weights are included in [aug_model](./model/aug_model).
+
 
 ## License
 
