@@ -64,7 +64,7 @@ The model was trained using the [All Faces Dataset](https://www.dropbox.com/s/a0
 
 Original colorful images were downscaled from 720p to 50x50 pixels gray scaled. The training dataset has been augmented using horizontal flip and blur effect, quadrupling dataset size. 
 
-Model structure is included inside [main.py](./main.py). Model weights are included in [aug_model](./model/aug_model).
+Model structure is included inside [main.py](./main.py). Model weights are included in [aug_model](./model/).
 
 
 ## License
