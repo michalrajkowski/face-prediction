@@ -10,9 +10,6 @@ This repository contains a [custom-trained](#model-training-process) gender pred
 git clone https://github.com/michalrajkowski/face-prediction.git
 cd face-prediction
 ```
-
-To mention the requirements and their versions in your README.md using Markdown, you can use a code block or inline code formatting. Here's how you can do it:
-
 2. Make sure you have all required libraries installed
 
 You can check if you have all the required libraries installed by running the following command:
