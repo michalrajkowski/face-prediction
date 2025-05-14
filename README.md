@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 The neural network performs at its peak when provided with forward-facing images of faces without any tilting.
 
-![Face images](https://media.discordapp.net/attachments/1153463839053062247/1153466912957812736/image.png)
+![Face Input](face.webp)
 
 Above images originate from [Pexels](https://www.pexels.com/search/face/).
 
@@ -39,7 +39,7 @@ The predictions will be saved as images in the `output images` directory, and a 
 
 Below is an example of how the predictions are saved as original images with their names, predicted gender, and certainty percentage:
 
-![Example prediction](https://media.discordapp.net/attachments/1153463839053062247/1153467370111783023/image.png)
+![Prediction Output](prediction.webp)
 
 ### text file
 The predictions in the `predictions.txt` file appear to be saved in the following format:
